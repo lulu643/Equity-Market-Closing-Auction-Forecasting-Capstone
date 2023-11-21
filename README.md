@@ -7,3 +7,5 @@ data
 ---- out_addl2  
 
 Use data_handler.py to help unzip data files.
+
+Run main.py to do PCA analysis.
