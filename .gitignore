@@ -1,0 +1,15 @@
+# Ignore all __pycache__ directories
+__pycache__/
+
+# Ignore the 'data' directory
+data/
+
+# Ignore __pycache__ in the 'utils' directory specifically
+utils/__pycache__/
+
+# Ignore all files ending with .ipynb
+*.ipynb
+
+.DS_Store
+
+.idea/
