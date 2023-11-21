@@ -34,7 +34,7 @@ def create_file_size_spreadsheet(root_directory, output_file):
 
 
 if __name__ == '__main__':
-    from MyDirectories import data_dir_1min
+    from my_directories import data_dir_1min
     output_file = '/Users/sihanliu/Desktop/capstone_pycharm/utils/file_size_spreadsheet.xlsx'
     create_file_size_spreadsheet(data_dir_1min, output_file)
 
@@ -46,23 +46,6 @@ if __name__ == '__main__':
     # Else, we could just work on the volume array
     # if there is more than half 0/NaN, we drop the ticker
     # I think this is the best way
-
-    # Else, use cyy's file, drop all rows with trade_volume=NaN
-    # But it seems that sometimes, it is corrupted and shown as 0 in all rows
-    # sometimes, it is corrupted, has a lot of 0 and a few values
-    # Besides, I have tried, cyy's file is too big for my machine
-    # I cannot almost do nothing(operations)
-    # I can only try that on Colab
-    # or ask him to do it
-
-    # One more thing, the tickers in folder with imbalance/cross data
-    # does not match exact the folder with 1min continuous trading data
-
-    # Else, I don't think it is a good idea to use the old data
-    # because it only has around 260 stocks
-    # and, Hora said that they are randomly picked by Russell 3000
-    # It is very likely that there are representative enough
-    # But, yes, we could try it
 
     # One more, we should do PCA on close auction data
     # and, need to do the tests to show whether it works in the final linear regression

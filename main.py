@@ -1,7 +1,7 @@
 import pandas as pd
 from pca_utils import *
 from utils.group_by_cross_volume import *
-from MyDirectories import *
+from my_directories import *
 
 # specify stocks and dates used in PCA analysis
 # stocks = top_cross_volume_stocks(data_dir_imbalance, None)  # None means use all stocks
