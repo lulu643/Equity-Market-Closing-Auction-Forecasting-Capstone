@@ -1,4 +1,4 @@
-from my_directories import *
+from config import *
 import pandas as pd
 
 

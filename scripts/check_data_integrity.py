@@ -34,9 +34,9 @@ def create_file_size_spreadsheet(root_directory, output_file):
 
 
 if __name__ == '__main__':
-    from my_directories import data_dir_1min
-    output_file = '//utils/file_size_spreadsheet.xlsx'
-    create_file_size_spreadsheet(data_dir_1min, output_file)
+    from config import DataDir1min
+    output_file = '//scripts/file_size_spreadsheet.xlsx'
+    create_file_size_spreadsheet(DataDir1min, output_file)
 
     # WORK LOG 20231114
     # Comment: One way to see if a file is corrupted is to check its file size

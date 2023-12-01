@@ -1,11 +1,14 @@
 import numpy as np
 from sklearn.decomposition import PCA
+from config import *
 import os
 
 
-def get_stock_list(folder_path):
+def get_stock_list(folder_path=DataDir1min):
+    """
+    Extract a list of unique stock names from the dataset
+    """
     stocks = []
-
     for item in os.listdir(folder_path):
         full_path = os.path.join(folder_path, item)
         if os.path.isdir(full_path):
@@ -13,7 +16,7 @@ def get_stock_list(folder_path):
     return sorted(stocks)
 
 
-def get_dates_strings(folder_path, start_date, end_date):
+def get_dates_strings(start_date, end_date, folder_path=DataDir1min+'/AAPL'):
     matching_dates = []
 
     for filename in os.listdir(folder_path):
