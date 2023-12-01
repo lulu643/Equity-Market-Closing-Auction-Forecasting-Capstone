@@ -2,9 +2,9 @@ import pandas as pd
 # pd.set_option('display.max_columns', None)
 import gzip
 
-filepath = "/Users/sihanliu/Desktop/capstone_pycharm/data/out_1m/BAC/bars.BAC.20220124"
-gz_file_path1 = "/Users/sihanliu/Desktop/capstone_pycharm/data/out_addl2/FE/imbalance.FE.nasdaq.20220124.gz"
-gz_file_path2 = "/Users/sihanliu/Desktop/capstone_pycharm/data/out_addl2/FE/cross.FE.20220124.gz"
+filepath = "//data/out_1m/BAC/bars.BAC.20220124"
+gz_file_path1 = "//data/out_addl2/FE/imbalance.FE.nasdaq.20220124.gz"
+gz_file_path2 = "//data/out_addl2/FE/cross.FE.20220124.gz"
 
 #############
 # For normal file

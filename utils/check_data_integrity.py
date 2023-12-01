@@ -35,7 +35,7 @@ def create_file_size_spreadsheet(root_directory, output_file):
 
 if __name__ == '__main__':
     from my_directories import data_dir_1min
-    output_file = '/Users/sihanliu/Desktop/capstone_pycharm/utils/file_size_spreadsheet.xlsx'
+    output_file = '//utils/file_size_spreadsheet.xlsx'
     create_file_size_spreadsheet(data_dir_1min, output_file)
 
     # WORK LOG 20231114

@@ -1,10 +1,8 @@
 import pandas as pd
 from pca_utils import *
-from utils.group_by_cross_volume import *
 from my_directories import *
 
 # specify stocks and dates used in PCA analysis
-# stocks = top_cross_volume_stocks(data_dir_imbalance, None)  # None means use all stocks
 all_stocks = get_stock_list(data_dir_1min)  # list of all stocks
 stocks = all_stocks.copy()  # uncorrupted stocks, will be modified later
 corrupted_stocks = {"empty file": [], "file not exist": [],

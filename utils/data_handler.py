@@ -3,9 +3,9 @@ import tarfile
 import gzip
 import os
 
-folder_path = '/Users/sihanliu/Desktop/capstone_pycharm/data/raw_data/compress_out_1m'
-# folder_path = '/Users/sihanliu/Desktop/capstone_pycharm/data/raw_data/compress_out_addl2'
-out_path = '/Users/sihanliu/Desktop/capstone_pycharm/data'
+folder_path = '//data/raw_data/compress_out_1m'
+# folder_path = '/Users/sihanliu/Desktop/Volume_PCA/data/raw_data/compress_out_addl2'
+out_path = '//data'
 
 # Create a function to extract tar files while maintaining the structure
 def extract_tar_files(in_path, output_path):
