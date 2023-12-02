@@ -1,5 +1,5 @@
-# This file stores the path references
-CurrentDir = '/Users/sihanliu/Desktop/Volume_PCA'
-DataDir = CurrentDir + '/data'
-DataDir1min = CurrentDir + '/data' + '/out_1m'
-DataDirCross = CurrentDir + '/data' + '/out_addl2'
+# config.py
+current_dir = '/Users/sihanliu/Desktop/Volume_PCA'
+data_dir = current_dir + '/data'
+data_dir_1min = current_dir + '/data' + '/out_1m'
+data_dir_cross = current_dir + '/data' + '/out_addl2'

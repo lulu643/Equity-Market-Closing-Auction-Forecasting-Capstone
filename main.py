@@ -22,7 +22,7 @@ corrupted_stocks = {
 start_date, end_date = "20220103", "20220404"
 
 # Generate a list of date strings within the specified range
-dates = pca_utils.get_dates_strings(start_date, end_date)
+dates = pca_utils.get_valid_dates(start_date, end_date)
 
 # initialize an empty container to store volume surprise arrays
 # key: stock, value: volume surprise (time_of_day, date)
@@ -36,7 +36,7 @@ for stock in all_stocks:
 
     try:  # Reading data
         for d, date in enumerate(dates):
-            file_name = os.path.join(DataDir1min, stock, f"bars.{stock}.{date}")
+            file_name = os.path.join(data_dir_1min, stock, f"bars.{stock}.{date}")
             in_df = pd.read_csv(file_name, sep="\s+")
             volume_array[:, d] = in_df.loc[:, 'trade_volume']
     except ValueError as e:  # empty file

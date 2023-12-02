@@ -2,7 +2,7 @@ import pandas as pd
 # pd.set_option('display.max_columns', None)
 import gzip
 
-filepath = "//data/out_1m/BAC/bars.BAC.20220124"
+filepath = "/Users/sihanliu/Desktop/Volume_PCA/data/out_1m/TFC/bars.TFC.20221227"
 gz_file_path1 = "//data/out_addl2/FE/imbalance.FE.nasdaq.20220124.gz"
 gz_file_path2 = "//data/out_addl2/FE/cross.FE.20220124.gz"
 

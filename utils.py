@@ -4,7 +4,7 @@ from config import *
 import os
 
 
-def get_stock_list(folder_path=DataDir1min):
+def get_stock_list(folder_path=data_dir_1min):
     """
     Extract a list of unique stock names from the dataset
     """
@@ -16,7 +16,18 @@ def get_stock_list(folder_path=DataDir1min):
     return sorted(stocks)
 
 
-def get_dates_strings(start_date, end_date, folder_path=DataDir1min+'/AAPL'):
+def get_valid_dates(start_date, end_date):
+    """
+    Extracts and returns dates from filenames in a specific folder within a given date range.
+
+    Parameters:
+    - start_date (str): Start of the date range in 'YYYYMMDD' format.
+    - end_date (str): End of the date range in 'YYYYMMDD' format.
+
+    Returns:
+    - list: Sorted list of dates (as strings in 'YYYYMMDD' format) within the specified range.
+    """
+    folder_path = data_dir_1min + '/AAPL'
     matching_dates = []
 
     for filename in os.listdir(folder_path):
